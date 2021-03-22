@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Working</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="{{ url_for('static',filename = 'icon.png') }}" type="image/icon type">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.typekit.net/txt6qtg.css">
+        <style>
+            .list_padding
+            {
+                margin-left: 12%;
+                margin-right: 12%;
+            }
+            .video_dim
+            {
+                width: 356px;
+                height: 200px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            @media only screen and (min-width: 820px) {
+                .list_padding
+            {
+                margin-left: 15%;
+                margin-right: 15%;
+            }
+            .video_dim
+            {
+                width: 800px;
+                height: 450px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            }
+            @media only screen and (min-width: 1080px) {
+            .nav_space {
+                margin-left: 55%;
+            }
+            }
+        .font_heading
+        {
+          font-family: raleway,sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            color: #D72638; 
+        }
+        #logo
+        {
+            padding-top: 300px;
+            padding-bottom: 25px;
+            background-size: cover;
+            font-family: raleway,sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+        .text
+        {
+            color: white; 
+            vertical-align: middle; 
+            display: flex; 
+            justify-content: center;
+        }
+        .bgnav
+        {
+          display: flex; background-size: cover; background-image: url(login.png);
+        }
+        .button_padding
+        {
+          min-width: 150px;
+        }
+        .padding{
+            margin-left: 12%;
+            margin-right: 12%;
+
+        }
+        .body_padding{
+            margin-left: 5%;
+            margin-right: 5%;
+
+        }
+        .font_body{
+            font-weight: 450;
+            font-family: sans-serif;
+            font-size: 20px;
+            text-align: left;
+            color: black;
+        }
+      </style>
+    </head>
+    <body>
+        <nav class="font_heading navbar navbar-expand-lg fixed-top navbar-dark" style="background-color: #011627; padding-left: 5%;">
+            <a class="font navbar-brand" href="/home">Diabetes Detection Web-App</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav nav_space">
+            <li class="nav-item">
+              <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="white-space: nowrap;"" href="/about_diabetes">About Diabetes</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/working">Working</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/userinput">Test</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/developers">Developers</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="row">
+          <div class="col-lg-12" style="padding-top: 80px; text-align: center; ">
+              <h1 class="font_heading" style="color: white; background-color: #D72638 ; padding-top: 7px; padding-bottom: 7px; margin-right: 7%; margin-left: 7%;"><b>Working</b></h1>
+                <br>
+          </div>
+      </div>
+      <div class="row padding font_body" style="text-align: center;">
+            <p>
+                Diabetes is a chronic condition in which the body develops a resistance to insulin, a hormone which converts food into glucose. Diabetes affect many people worldwide and is normally divided into Type 1 and Type 2 diabetes. Both have different characteristics. Here in this web application, we analyze the <b>PIMA Indian Diabetes dataset</b>  <small style="color: #727980;">(<a href="https://www.kaggle.com/uciml/pima-indians-diabetes-database" target="_blank">view dataset</a>)</small> to predict if a particular is at a risk of developing diabetes, given the independent factors.
+            </p>
+            <p>    A lot of research has happened on the non-invasive automated detection of diabetes using machine learning techniques. Machine learning was employed based on steps of feature extraction, feature selection and classification. </p>
+            <p>
+               <br> Here we use the Random Forest Classification to do so.
+            </p>
+      </div>
+
+        <div class="row padding">
+            <div class="font_heading" >
+                <p style="font-size: 23px">About Random Forest Classification</p>
+                <div class="row body_padding font_body" >
+                    <p>
+                        Random forest, like its name implies, consists of a large number of individual decision trees 
+                        <small style="color: #727980;">(to know more about decision trees <a href="https://youtu.be/7VeUPuFGJHk?t=8" target="_blank">click here</a>)</small> that operate as an ensemble. Each individual tree in the random forest spits out a class prediction and the class with the most votes becomes our model’s prediction.
+                        The fundamental concept behind random forest is a simple but powerful one — the wisdom of crowds.
+                        Random forests or random decision forests are an ensemble learning method for classification, regression and other tasks that operate by constructing a multitude of decision trees at training time and outputting the class that is the mode of the classes or mean/average prediction of the individual trees.
+                    </p>
+                    <p>
+                         To know more about Random Forest Classification refer this video.
+                         <small id="passwordHelpBlock" class="form-text text-muted">
+                            courtesy: <a href="https://www.youtube.com/channel/UCtYLUTtgS3k1Fg4y5tAhLbw" target="_blank">StatQuest with Josh Starmer</a>
+                            </small>
+                     </p>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="padding-bottom: 35px;">
+        <iframe class="video_dim" src="https://www.youtube-nocookie.com/embed/J4Wdy0Wc_xQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+
+        <div class="row padding">
+            <div class="font_heading" >
+                <p style="font-size: 23px">Parameters Considered</p>
+                <div class="font_body">
+                    <p>The following parameters are considered in our prediction model</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-group list_padding" style="padding-bottom: 100px;">
+            <a href="" class="list-group-item list-group-item-action" style="background-color: #EAECEF;" onclick="return false">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Number Of Pregnancies</h5>
+              </div>
+              <p class="mb-1">In a Range of 0-17</p>
+            </a>
+            <a href="" class="list-group-item list-group-item-action" onclick="return false"">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Glucose Level</h5>
+              </div>
+              <p class="mb-1">In a Range of 0-199</p>
+            </a>
+            <a href="" class="list-group-item list-group-item-action" style="background-color: #EAECEF;" onclick="return false">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Blood Pressure</h5>
+                </div>
+                <p class="mb-1">In a Range of 0-122</p>
+            </a>
+            <a href="" class="list-group-item list-group-item-action" onclick="return false"">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Skin Thickness</h5>
+              </div>
+              <p class="mb-1">In a Range of 0-99</p>
+            </a>
+            <a href="" class="list-group-item list-group-item-action" style="background-color: #EAECEF;" onclick="return false">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Insulin value</h5>
+                </div>
+                <p class="mb-1">In a Range of 0-846</p>
+            </a>
+            <a href="https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/english_bmi_calculator/bmi_calculator.html" target="_blank" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Body mass index (BMI)</h5>
+                </div>
+                <p class="mb-1">In a Range of 0.0-67.1</p>
+                <small class="text-muted">Click to calulate BMI</small>
+            </a>
+            <a href="" target="_blank" data-toggle="modal" data-target="#exampleModal" style="background-color: #EAECEF;" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Diabetes Pedigree Function (DPF)</h5>
+                </div>
+                <p class="mb-1">In a Range of 0.078-2.42</p>
+                <small class="text-muted">Click to view formula to calculate your DPF value.</small>
+            </a>
+            <a href="" class="list-group-item list-group-item-action"onclick="return false">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Age</h5>
+                </div>
+                <p class="mb-1">In a Range of 21-81</p>
+            </a>
+             <!-- Modal -->
+             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Diabetes Pedigree Function</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="{{ url_for('static',filename = 'dpf_def.png') }}" alt="DPF definition" style="height: 80%; width: 80%">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal" style="border-radius: 50px;">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      
+    </body>
+      
+</html>
